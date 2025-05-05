@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import { HomeIcon, ClipboardIcon, Settings, LogOut, X } from 'lucide-react';
+import { HomeIcon, Settings, LogOut, X, Wand2 } from 'lucide-react';
 import { useCleaningContext } from '../context/CleaningContext';
 
 interface SidebarProps {
@@ -15,7 +15,7 @@ const Sidebar: React.FC<SidebarProps> = ({ onClose }) => {
       <div className="p-4 border-b flex justify-between items-center">
         <div className="flex items-center gap-3">
           <div className="bg-blue-600 text-white p-2 rounded-lg">
-            <ClipboardIcon size={24} />
+            <Wand2 size={24} />
           </div>
           <h1 className="text-xl font-bold text-blue-600">CleanMaster</h1>
         </div>

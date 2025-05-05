@@ -127,7 +127,7 @@ const Dashboard: React.FC = () => {
               <div className="mb-4 text-gray-400">
                 <Filter size={48} className="mx-auto" />
               </div>
-              <h3 className="text-lg font-medium text-gray-800">Нет ваших заявок</h3>
+              <h3 className="text-lg font-medium text-gray-800">Нет заявок</h3>
               <p className="text-gray-500 mt-2">Попробуйте изменить фильтры или поисковый запрос</p>
             </div>
           ) : (
