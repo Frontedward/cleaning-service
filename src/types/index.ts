@@ -28,6 +28,9 @@ export interface CleaningRequest {
     bathrooms: number;
     type: 'apartment' | 'office' | 'hotel_room';
   };
+  checkIn?: Date;
+  checkOut?: Date;
+  cleaningType?: string;
 }
 
 export interface CleaningStaff {

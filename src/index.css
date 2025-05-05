@@ -9,10 +9,14 @@
   }
   
   body {
-    @apply min-h-screen w-full overflow-x-hidden;
+    @apply min-h-screen w-full overflow-x-hidden bg-pink-light text-black font-sans;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1, h2, h3, .font-display {
+    font-family: 'Fredoka One', Arial, sans-serif;
   }
 }
 
@@ -25,4 +29,19 @@
   .safe-area-padding {
     @apply pt-safe-top pb-safe-bottom pl-safe-left pr-safe-right;
   }
+}
+
+.btn {
+  @apply bg-pink text-white font-semibold rounded-lg shadow transition;
+}
+.btn:hover, .btn:focus {
+  @apply bg-turquoise-dark;
+}
+
+.card, .request-card {
+  @apply bg-white border border-pink shadow rounded-lg;
+}
+
+.sidebar-item {
+  @apply font-semibold;
 }

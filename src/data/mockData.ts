@@ -140,7 +140,79 @@ export const mockRequests: CleaningRequest[] = [
       bathrooms: 1,
       type: 'apartment'
     }
-  }
+  },
+  {
+    id: 'REQ-006',
+    roomNumber: 402,
+    floor: 4,
+    location: 'Grand Hotel',
+    status: 'pending',
+    roomStatus: 'vacant',
+    guestCount: 1,
+    previousGuestCount: 2,
+    estimatedTime: 40,
+    assignedTo: null,
+    created: new Date(),
+    scheduled: new Date(),
+    cleaningHistory: [],
+    roomCharacteristics: {
+      area: 30,
+      beds: 1,
+      bathrooms: 1,
+      type: 'hotel_room',
+    },
+    checkIn: new Date('2025-05-10T14:00:00'),
+    checkOut: new Date('2025-05-12T12:00:00'),
+    cleaningType: 'поддерживающая',
+  },
+  {
+    id: 'REQ-007',
+    roomNumber: 305,
+    floor: 3,
+    location: 'Downtown Business Center',
+    status: 'assigned',
+    roomStatus: 'vacant',
+    guestCount: 2,
+    previousGuestCount: 1,
+    estimatedTime: 50,
+    assignedTo: null,
+    created: new Date(),
+    scheduled: new Date(),
+    cleaningHistory: [],
+    roomCharacteristics: {
+      area: 55,
+      beds: 2,
+      bathrooms: 1,
+      type: 'apartment',
+    },
+    checkIn: new Date('2025-05-15T15:00:00'),
+    checkOut: new Date('2025-05-18T11:00:00'),
+    cleaningType: 'поддерживающая',
+  },
+  {
+    id: 'REQ-008',
+    roomNumber: 210,
+    floor: 2,
+    location: 'Sunset Apartments, Building C',
+    status: 'pending',
+    roomStatus: 'vacant',
+    guestCount: 3,
+    previousGuestCount: 2,
+    estimatedTime: 60,
+    assignedTo: null,
+    created: new Date(),
+    scheduled: new Date(),
+    cleaningHistory: [],
+    roomCharacteristics: {
+      area: 70,
+      beds: 3,
+      bathrooms: 2,
+      type: 'apartment',
+    },
+    checkIn: new Date('2025-05-20T13:00:00'),
+    checkOut: new Date('2025-05-25T12:00:00'),
+    cleaningType: 'поддерживающая',
+  },
 ];
 
 export const mockStaff: CleaningStaff = {
@@ -156,3 +228,5 @@ export const mockStaff: CleaningStaff = {
   },
   role: 'staff'
 };
+
+const getGeneralRequests = () => mockRequests;
