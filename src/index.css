@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    -webkit-tap-highlight-color: transparent;
+    touch-action: manipulation;
+  }
+  
+  body {
+    @apply min-h-screen w-full overflow-x-hidden;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+@layer utilities {
+  .mobile-container {
+    @apply w-full px-4 mx-auto;
+    max-width: 100%;
+  }
+  
+  .safe-area-padding {
+    @apply pt-safe-top pb-safe-bottom pl-safe-left pr-safe-right;
+  }
+}
